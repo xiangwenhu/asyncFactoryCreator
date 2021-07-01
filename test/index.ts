@@ -23,7 +23,7 @@ function syncInsCreator(opitons: unknown = {}) {
 
 
 function getAsyncIns(context: unknown, options: unknown = {}) {
-    return factory(syncInsCreator, context, options);
+    return factory(asyncInsCreator, context, options);
 }
 
 ; (async function test() {
